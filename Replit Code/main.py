@@ -1,8 +1,10 @@
-import swap
-import christmastree
-import keypad
-import animation1
-import animation2
+import week0.swap as swap
+import week0.christmastree as christmastree
+import week0.keypad as keypad
+import week0.animation1 as animation1
+import week0.animation2 as animation2
+import week1.infodb as infodb
+import week1.fib as fib
 
 
 main_menu = [
@@ -18,6 +20,18 @@ animationsub_menu = [
     ["Animation 1", animation1.run],
     ["Animation 2", animation2.ship]
 ]
+
+infodbsub_menu = [
+    ["InfoDB (For loop)", infodb.forl],
+    ["InfoDB (While loop)", infodb.whilel],
+    ["InfoDB (Recursive loop)", infodb.recursivel],
+]
+
+fibsub_menu = [
+    ["Fibonacci Sequence", fib.seq],
+    ["Fibonacci Term", fib.term]
+]
+
 
 border = "=" * 25
 banner = f"\n{border}\nPlease Select An Option\n{border}"
@@ -52,13 +66,23 @@ def buildMenu(banner, options):
 
 
 def drawingsubmenu():
-    title = "Function Submenu" + banner
+    title = "Drawing" + banner
     buildMenu(title, drawingsub_menu)
 
 
 def animationsubmenu():
-    title = "Function Submenu" + banner
+    title = "Animation" + banner
     buildMenu(title, animationsub_menu)
+
+
+def infodbsubmenu():
+    title = "InfoDB" + banner
+    buildMenu(title, infodbsub_menu)
+
+
+def fibsubmenu():
+    title = "Fibonacci" + banner
+    buildMenu(title, fibsub_menu)
 
 
 def menu():
@@ -66,6 +90,8 @@ def menu():
     menu_list = main_menu.copy()
     menu_list.append(["Drawing", drawingsubmenu])
     menu_list.append(["Animations", animationsubmenu])
+    menu_list.append(["InfoDB", infodbsubmenu])
+    menu_list.append(["Fibonacci", fibsubmenu])
     buildMenu(title, menu_list)
 
 
