@@ -19,7 +19,7 @@ drawingsub_menu = [
 animationsub_menu = [
     ["Animation 1", animation1.run],
     ["Animation 2", animation2.ship],
-    ["Animation 3", "/Users/KatieHickman/IdeaProjects/willcyber.github.io/Replit_Code/week_2/animation3.py"]
+    ["Animation 3", "/Users/KatieHickman/IdeaProjects/willcyber.github.io/Replit_Code/week_3/animation3.py"]
 ]
 
 infodbsub_menu = [
