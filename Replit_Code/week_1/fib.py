@@ -1,5 +1,5 @@
 # Hack 3
-import week0.swap as swap
+from Replit_Code.week_0 import swap
 
 
 def fibterm(a, b, n):

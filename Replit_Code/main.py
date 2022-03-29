@@ -1,10 +1,10 @@
-import week0.swap as swap
-import week0.christmastree as christmastree
-import week0.keypad as keypad
-import week0.animation1 as animation1
-import week0.animation2 as animation2
-import week1.infodb as infodb
-import week1.fib as fib
+from Replit_Code.week_0 import swap
+from Replit_Code.week_0 import christmastree
+from Replit_Code.week_0 import keypad
+from Replit_Code.week_0 import animation1
+from Replit_Code.week_0 import animation2
+from Replit_Code.week_1 import infodb
+from Replit_Code.week_1 import fib
 
 
 main_menu = [
