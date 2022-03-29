@@ -34,8 +34,8 @@ fibsub_menu = [
 ]
 
 
-border = "=" * 25
-banner = f"\n{border}\nPlease Select An Option\n{border}"
+border = "\033[34m=\033[36m" * 25
+banner = f"\033[37m\n{border}\nPlease Select An Option\n{border}\033[37m"
 
 
 def buildMenu(banner, options):
@@ -46,7 +46,7 @@ def buildMenu(banner, options):
         prompts[index] = op
     for key, value in prompts.items():
         print(key, '->', value[0])
-    choice = input("Type your choice> ")
+    choice = input("Type your choice>")
     try:
         choice = int(choice)
         if choice == 0:
