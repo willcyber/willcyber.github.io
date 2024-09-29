@@ -6,8 +6,8 @@ function Main() {
   return (
     <>
       <main>
-        <Services />
         <About />
+        <Services />
         <Contact />
       </main>
     </>

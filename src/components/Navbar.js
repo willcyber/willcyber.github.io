@@ -1,31 +1,9 @@
 import { Link } from "react-scroll";
 
 function Navbar() {
-  document.addEventListener("scroll", function (e) {
-    if (window.screen.width < 768 && window.scrollY > 690) {
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.add("display");
-
-      const nav = document.querySelector(".navbar");
-
-      nav.classList.add("navopened");
-    } else if (window.screen.width > 768 && window.scrollY > 220) {
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.add("display");
-
-      const nav = document.querySelector(".navbar");
-
-      nav.classList.add("navopened");
-    } else {
-      const nav = document.querySelector(".navbar");
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.remove("display");
-      nav.classList.remove("navopened");
-    }
-  });
+  // Remove the scroll listener that adds/removes classes based on scroll position
   function openBar() {
     const bar = document.querySelector(".bar");
-
     bar.classList.toggle("opened");
   }
 
@@ -104,4 +82,6 @@ function Navbar() {
     </nav>
   );
 }
+
+
 export default Navbar;
