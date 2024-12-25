@@ -108,6 +108,7 @@
 /*---------------------------------------------------------------------------HEADER---------------------------------------------------------------------------*/
 
 /* Style the header with a grey background and some padding */
+
     .header {
         overflow: hidden;
         background-color: #5B6770;
@@ -117,17 +118,18 @@
     }
 
     .backgroundImage {
-        background-image: url("All-Images/ntcbackground.png");
+        background-image: url("All-Images/Screenshot 2024-12-24 200131.png");
         background-repeat: no-repeat;  
         background-attachment: fixed;
         background-size: cover;
-        background-position: center;
+        background-position: center 0px; 
         margin-left: 0px;
         margin-right: 0px;
+        opacity: 0.8;
     }
 
     .backgroundDesignImage {
-        background-image: url("All-Images/ntcbackground.png");
+        background-image: url("All-Images/background.png");
         background-repeat: repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -138,7 +140,6 @@
     }
 
     .backgroundTextColor {
-        background-color: rgba(0, 0, 0, 0.622);
         background-attachment:fixed;
         background-size: cover;
         text-align: center;
