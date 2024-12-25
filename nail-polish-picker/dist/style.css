@@ -1,0 +1,61 @@
+body {
+  background: #eddaf2;
+  color: #666;
+  font-family: sans-serif;
+}
+svg {
+  float: left;
+}
+svg#handSVG {
+  max-width: 70vw;
+  max-height: 70vh;
+}
+
+svg#slider {
+  max-width: 500px;
+}
+
+svg#bottleSVG {
+  width: 100%;
+  max-width: 80px;
+  margin: 0 20px 50px 20px;
+  cursor: pointer;
+}
+.sp-container {
+  top: 7px !important;
+  left: 100px !important;
+}
+.sp-button-container.sp-cf {
+  display: none;
+}
+.nail,
+.contents {
+  fill: #F7F3F0;
+}
+h1,
+p {
+  position: relative;
+}
+h1 span,
+p span {
+  border: 1px dotted #666;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: #F7F3F0;
+  display: inline-block;
+  margin: 0 10px;
+}
+h1 {
+  margin-bottom: 0;
+}
+p {
+  cursor: pointer;
+}
+p span {
+  height: 10px;
+  width: 10px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  background: #DBB595;
+}
