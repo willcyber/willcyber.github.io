@@ -206,20 +206,22 @@
 
     .CreativityCode {
         text-align: center;
-        background-image: url("All-Images/SealtheDeal.jpg");
-        background-repeat: repeat;
-        color: white; /* color of writing at center of image? */
+        background-image: url("All-Images/logos.png");
+        background-size: cover; /* Ensures the image covers the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        color: rgb(8, 8, 8); /* color of writing at center of image */
         font-family: Arial;
         font-style: italic;
         font-size: 40px;
-        padding: 40px;
+        padding: 30px;
     }
 
     .CreativityCode p {
         font-size: 30px;
         font-style: italic;
         text-align: center;
-        color: white; /* color of writing at center of image? */
+        color: rgb(4, 4, 4); /* color of writing at center of image? */
         padding: 30px;
     }
 

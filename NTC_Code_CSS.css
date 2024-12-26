@@ -107,7 +107,6 @@ body {
 .CreativityCode {
     text-align: center;
     background-image: url("All-Images/SealtheDeal.jpg");
-    background-repeat: repeat;
     color: white; /* color of writing at center of image? */
     font-family: Arial;
     font-style: italic;
