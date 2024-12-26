@@ -118,7 +118,7 @@
     }
 
     .backgroundImage {
-        background-image: url("All-Images/Screenshot 2024-12-24 200131.png");
+        background-image: url("All-Images/crouchededit.jpeg");
         background-repeat: no-repeat;  
         background-attachment: fixed;
         background-size: cover;
@@ -152,8 +152,43 @@
         font-family: Arial;
         font-style: italic;
         font-size: 60px;
+        text-align: left;
+        padding-left: 1vw;
         color: white;
     }
+
+    .backgroundTextRight {
+        font-family: Arial;
+        font-style: italic;
+        font-size: 60px;
+        text-align: right;
+        padding-right: 1vw;
+        color: white;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+    
+    .backgroundText {
+        font-family: Arial;
+        font-style: italic;
+        font-size: 60px;
+        text-align: left;
+        padding-left: 1vw;
+        color: white;
+    }
+    
+    .backgroundTextRight {
+        font-family: Arial;
+        font-style: italic;
+        font-size: 60px;
+        text-align: right;
+        padding-right: 1vw;
+        color: white;
+    }    
 
     /* Style the header links */
     .header a {
@@ -207,13 +242,13 @@
     .CreativityCode {
         text-align: center;
         background-image: url("All-Images/logos.png");
-        background-size: contain; /* Ensures the image covers the entire area */
+        background-size: cover; /* Ensures the image covers the entire area */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
         color: rgb(8, 8, 8); /* color of writing at center of image */
         font-family: Arial;
         font-style: italic;
-        font-size: 40px;
+        font-size: 35px;
         padding: 0px;
     }
 
