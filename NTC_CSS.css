@@ -207,14 +207,14 @@
     .CreativityCode {
         text-align: center;
         background-image: url("All-Images/logos.png");
-        background-size: cover; /* Ensures the image covers the entire area */
+        background-size: contain; /* Ensures the image covers the entire area */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
         color: rgb(8, 8, 8); /* color of writing at center of image */
         font-family: Arial;
         font-style: italic;
         font-size: 40px;
-        padding: 30px;
+        padding: 0px;
     }
 
     .CreativityCode p {
@@ -222,7 +222,7 @@
         font-style: italic;
         text-align: center;
         color: rgb(4, 4, 4); /* color of writing at center of image? */
-        padding: 30px;
+        padding:29px;
     }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
