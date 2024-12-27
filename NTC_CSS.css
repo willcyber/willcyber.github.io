@@ -18,9 +18,10 @@
         background-color: #5B6770;
     }
 /*-----------------------------------HOMEPAGE CODE + MEDIA QUERIES-----------------------------------*/
-    .HomepageImages {
-        display: flex;
-        flex-direction: row;
+    #HomepageImages {
+        /* display: flex;
+        flex-direction: row; */
+        height: 460px;
     }
 
     img#CBB, img#DBB {
