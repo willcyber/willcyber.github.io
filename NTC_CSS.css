@@ -805,10 +805,10 @@ svg #Background {
 
 /* Keyframes for continuous scrolling */
 @keyframes slide {
-    from {
-        transform: translateX(0)
+    0% {
+        transform: translateX(0);
     }
-    to {
+    100% {
         transform: translateX(-100%);
     }
 }
@@ -818,21 +818,21 @@ svg #Background {
     padding: 60px 0;
     background: white;
     white-space: nowrap;
+    width: 100%;
 }
 
 .logos-slide {
-    display: inline-block;
-    animation: 5s slide infinite linear;
+    display: inline-flex;
+    animation: 16s slide infinite linear; /* Increased duration for smoother transition */
 }
 
-.loops-slide img {
-    height: 50px;
-    margin: 0 40px;
+.logos-slide img {
+    height: 110px;
+    margin: 0 30px;
+    object-fit: contain;
 }
-  
-  
-  
-  
+
+
   
   
   
