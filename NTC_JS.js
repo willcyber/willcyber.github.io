@@ -479,3 +479,21 @@ document.addEventListener("input", changeShapeColor)
             document.getElementById("defaultOpen").click();
          });
 
+         
+         const logoTrack = document.querySelector('.logo-track');
+         const logos = document.querySelectorAll('.logo-track img');
+         const logoWidth = logos[0].clientWidth; // Get width of one logo
+         
+         // Function to add a clone of the first logo to the end of the track
+         function addLogoClone() {
+           const firstLogo = logoTrack.querySelector('img'); // Get the first logo
+           const logoClone = firstLogo.cloneNode(true); // Clone it
+           logoTrack.appendChild(logoClone); // Append to the end of the track
+         }
+         
+         // Listen to the animation event to add new logos when they exit
+         logoTrack.addEventListener('animationiteration', () => {
+           addLogoClone(); // Add a new logo clone when the animation restarts
+         });
+         
+        

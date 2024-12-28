@@ -801,6 +801,41 @@ svg #Background {
 }
 }
 
+/*------------------------------------Scrolling Logos-------------------------------------------------------*/
 
+/* Keyframes for continuous scrolling */
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+
+.loops-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
 
 /*END OF CSS*/
