@@ -863,4 +863,75 @@ svg #Background {
     object-fit: contain;
 }
 
+/*------------------------------------Experiences-------------------------------------------------------*/
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #5B6770;
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('All-Images/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+.experience {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.details h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
 /*END OF CSS*/
