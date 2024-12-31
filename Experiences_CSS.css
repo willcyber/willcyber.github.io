@@ -1,0 +1,937 @@
+.mediaViewInfo {
+    --web-view-name: Design It Instructions;
+    --web-view-id: Design_It_Instructions;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Design_It_Instructions;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: #5B6770;
+}
+/*-----------------------------------HOMEPAGE CODE + MEDIA QUERIES-----------------------------------*/
+#HomepageImages {
+    /* display: flex;
+    flex-direction: row; */
+    height: 460px;
+}
+
+img#CBB, img#DBB {
+    width: 61%;
+    max-width: 820px;
+    height: auto;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#CBB {
+    float: right;
+}
+
+img#DBB {
+    float: left;
+}
+
+@media screen and (max-width: 1100px) {
+img#CBB, img#DBB {
+    float: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display: block;
+}
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1100px) {
+img#CBB, img#DBB {
+    width: 47%;
+}
+
+img#DBB {
+    margin-left: 20px;
+}
+
+img#CBB {
+    margin-right: 20px;
+}
+
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1800px) {
+
+img#DBB {
+    margin-left: 30px;
+}
+
+img#CBB {
+    margin-right: 30px;
+}
+}
+
+@media screen and (min-width: 1800px) and (max-width: 1850px) {
+
+img#DBB {
+    margin-left: 60px;
+}
+
+img#CBB {
+    margin-right: 60px;
+}
+
+}
+
+@media screen and (min-width: 1850px) {
+img#DBB {
+    margin-left: 80px;
+}
+
+img#CBB {
+    margin-right: 80px;
+}
+}
+/*-----------------------------------END OF HOMEPAGE CODE + MEDIA QUERIES-----------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------HEADER---------------------------------------------------------------------------*/
+
+/* Style the header with a grey background and some padding */
+
+.header {
+    overflow: hidden;
+    background-color: #5B6770;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.backgroundImage {
+    background-image: url("All-Images/crouchededit.jpeg");
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 0.8;
+}
+
+.backgroundDesignImage {
+    background-image: url("All-Images/background.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    margin-left:0px;
+    margin-right:0px;
+    opacity: .9;
+}
+
+.backgroundTextColor {
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 135px;
+}
+
+.backgroundTextColorNoPad {
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.backgroundText {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 1vw;
+    color: white;
+}
+
+.backgroundTextRight {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 60px;
+    text-align: left;
+    padding-right: 1vw;
+    color: white;
+}
+
+.backgroundTextSmall {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 1vw;
+    color: white;
+    white-space: nowrap; 
+    padding-top: 20px;
+}
+
+.backgroundTextRightSmall {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;  /* Ensures that the content is centered */
+    align-items: center;  /* Vertically centers the content */
+    width: 100%;  /* Take full width of its container */
+    padding-top: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+/*     
+.backgroundText {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 1vw;
+    color: white;
+}
+
+.backgroundTextRight {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 1vw;
+    color: white;
+}     */
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial;
+    font-style: italic; 
+}
+
+.site-identity img {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.header a.logo {
+    font-size: 30px;
+    font-family: Arial;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.header a.logo:hover {
+    background-color: #5B6770; 
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Style the active/current link*/
+.header a:after {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+    margin-top: 20px;
+}
+
+.CreativityCode {
+    text-align: center;
+    background-image: url("All-Images/logos.png");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: rgb(8, 8, 8); /* color of writing at center of image */
+    font-family: Arial;
+    font-style: italic;
+    font-size: 35px;
+    padding: 0px;
+}
+
+.CreativityCode p {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: rgb(4, 4, 4); /* color of writing at center of image? */
+    padding:29px;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 810px) {
+.header a {
+    float: none;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.header a.logo {
+    line-height: 70px;
+}
+
+.header-right {
+    float: none;
+}
+
+.header a:hover {
+    background-color: #5B6770; 
+}
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+@media screen and (max-width: 810px) {
+
+.backgroundImage {
+    display: none;
+}
+
+.header-right {
+    margin-top: 0px;
+}
+
+.header a.logo {
+    margin-top: 0px;
+}
+
+.CreativityCode {
+    display:none;
+}
+}
+
+div.DYM {
+    font-family: Arial;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #5B6770;
+}
+
+div.Caution {
+    font-family: Arial;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    color: #5B6770;
+}
+
+/*-------------------------------------------------------------------------HEADER END-------------------------------------------------------------------------*/
+
+/*INTERFACE CSS*/
+
+/*------------------------------------FLEXBOX DESIGN---------------------------------*/
+
+.flex-container {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+background-color:#e7e6e8;
+padding:20px;
+border-radius: 20px;
+margin:30px;
+height: 700px;
+justify-content: space-between;
+}
+
+div.handbox {
+background-color:#ffffff;
+margin: 10px;
+padding: 20px;
+font-size: 30px;
+border-radius: 20px;
+width: 575px;
+}
+
+div.rightbox {
+background-color: white;
+margin: 10px;
+padding: 20px;
+font-size: 25px;
+border-radius: 20px;
+width: 715px;
+}
+
+/*-------------------------------END FLEXBOX DESIGN CSS------------------------------*/
+
+
+/*------------------------------------TAB DESIGN---------------------------------*/
+
+.tablink {
+background-color:rgba(91,102,112,255);
+color: white;
+border: none;
+cursor: pointer;
+width: 15%;
+height: 60px;
+font-family: Arial;
+font-style: italic;
+font-size: 15px;
+border-radius: 10px;
+}
+
+.tablink:hover {
+text-decoration: underline;
+}
+
+.tablink:focus {
+text-decoration: underline;
+}
+
+.smallnav {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: rgba(91, 102, 112, 255);
+border-radius:10px;
+margin: 0px;
+}
+
+/*------------------------------------END TAB DESIGN---------------------------------*/
+
+
+/*------------------------------------MEDIA QUERIES DESIGN IT INTERFACE----------------------------------*/
+
+@media screen and (max-width: 1200px) {
+.flex-container {
+flex-wrap: wrap;
+height: 1300px;
+}
+
+div.handbox {
+height: 600px;
+width: 1500px;
+}
+
+div.rightbox {
+height: 600px;
+width: 1500px;
+}
+}
+
+@media screen and (min-width: 790px) {
+div.Caution {
+display:none;
+}
+}
+
+@media screen and (max-width: 790px) {
+.flex-container {
+display: none
+}
+
+div.DYM {
+display: none;
+}
+}
+
+/*------------------------------------END MEDIA QUERIES DESIGN IT INTERFACE----------------------------------*/
+
+/*------------------------------------INSTRUCTIONS--DESIGN IT INTERFACE----------------------------------*/
+
+.instructions {
+font-family: Arial;
+font-style: italic;
+font-size: 18px;
+line-height: 25px;
+margin: 20px;
+margin-top: 30px;
+}
+
+/*----------------------------------SKIN TONE--DESIGN IT INTERFACE--------------------------------*/
+
+.skin-tone {
+font-family: Arial;
+font-style: italic;
+font-size: 18px;
+line-height: 25px;
+margin: 20px;
+margin-top: 30px;
+text-align: center;
+}
+
+#S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+border-radius: 50%;
+border: none;
+width: 80px;
+height: 80px;
+font-family: Arial;
+font-style: italic;
+text-align: center;
+font-size: 14px;
+margin: 10px 16px;
+}
+
+#S1 {
+background: #fff3ea;
+}
+
+#S2 {
+background: #ffeadb;
+}
+
+#S3 {
+background: #ffd9be;
+}
+
+#S4 {
+background: #f5bf98;
+}
+
+#S5 {
+background: #e6a06f;
+}
+
+#S6 {
+background: #cc8959;
+}
+
+#S7 {
+background: #a15b33;
+}
+
+#S8 {
+background: #834011;
+color: white;
+}
+
+#S9 {
+background: #5C2B0C;
+color: white;
+}
+
+#S10 {
+background: #3D1A09;
+color: white;
+}
+
+/*COLOR PICKER*/
+.colorPicker {
+cursor:pointer;
+overflow: hidden;
+height: 60px;
+width: 60px;
+background: Transparent;
+z-index:1;
+top: 15px; 
+left: 20px;
+}
+
+#eyedrop {
+padding: 2px;
+}
+
+/*----------------------------------NAIL SHAPE--DESIGN IT INTERFACE--------------------------------*/
+.nailShapeOpener {
+font-family: Arial;
+font-style: italic;        
+font-size: 18px;
+line-height: 25px;
+margin: 20px;
+margin-top: 30px;
+text-align: center;
+}
+
+.nailShapeButton {
+background:none;
+padding: 20px;
+text-align:center;
+font-family: Arial;
+font-size:15px;
+font-family: Arial;
+font-style: italic;
+cursor: pointer;
+}   
+/*----------------------------------NAIL COLOR--DESIGN IT INTERFACE--------------------------------*/
+.nail-color {
+font-family: Arial;
+font-style: italic;
+font-size: 18px;
+line-height: 25px;
+margin: 20px;
+margin-top: 30px;
+text-align: center;
+}
+
+.nail{
+--fill-color: #ffffff;
+}
+
+.nailColor {
+visibility: hidden;
+}
+
+/*----------------------------------NAIL STICKERS--DESIGN IT INTERFACE--------------------------------*/
+
+.stickers-p {
+font-family: Arial;
+font-style: italic;
+line-height: 30px;
+margin: 20px;
+margin-top: 30px;
+text-align: center;
+font-size: 18px;
+}
+
+.stickerLink {
+background-color:rgba(91,102,112,255);
+color: white;
+border: none;
+cursor: pointer;
+width: 15%;
+height: 40px;
+font-family: Arial;
+font-style: italic;
+font-size: 15px;
+border-radius: 10px;
+}
+
+.stickerLink:hover {
+text-decoration: underline;
+}
+
+.stickerLink:focus {
+text-decoration: underline;
+}
+
+.smallnavOne {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: rgba(91,102,112,255);
+border-radius:10px;
+margin: 0px;
+}
+
+.image {
+width: 40px;
+height: auto;
+padding: 4px;
+}
+
+img {
+float: left;
+max-width: 100%;
+max-height: 100%;
+resize: both;
+}
+
+div.Objects, div.Food, div.Nature, div.People, div.Symbols, div.nailbot {
+padding: 10px;
+padding-top: 25px;
+margin-left: 15px;
+}
+
+div.nailbot .image {
+width: 80px;
+}
+
+/*------------------------------------NAIL COLOR INTERFACE - DESIGN IT----------------------------------*/
+
+svg#handSVG {
+width: 60vw;
+margin-left: 0px;
+/*height: 70vh;*/
+stroke: #646a70;
+stroke-width: .7px;
+}
+
+svg #Background {
+--fill-color:#ffffff;
+}
+
+.handpara {
+text-align: center;
+}
+
+/*------------------------------------FINISH - DESIGN IT----------------------------------*/
+
+.Finishp, #Save, #Share, .FinishButton {
+font-family: Arial;
+font-style: italic;
+text-align: center;
+font-size: 18px;
+}
+
+#Save, #Share {
+background: #5b6670;
+border-radius: 20px;
+color: white;
+width: 260px;
+height: 80px;
+cursor: pointer;
+}
+
+
+
+/*------------------------------------END NAIL COLOR INTERFACE - DESIGN IT----------------------------------*/
+
+/*------------------------------------MORE SPECIFIC MEDIA QUERIES----------------------------------*/
+
+
+@media screen and (max-width: 1380px) {
+
+#S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+width: 70px;
+height: 70px;
+margin: 5px 8px;
+font-size: 12px;
+}
+
+.nailShapeButton {
+padding: 10px;
+padding-bottom: 25px;
+}
+
+.image {
+width: 34px;
+padding: 3px;
+}
+
+.tablink, .stickerLink {
+font-size: 13px;
+}
+
+}
+
+@media screen and (max-width: 1300px) {
+
+#S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+width: 60px;
+height: 60px;
+margin: 5px 8px;
+font-size: 11px;
+}
+
+.nailShapeButton {
+padding-bottom: 15px;
+width: 74px;
+}
+
+.image {
+width: 30px;
+padding: 2px;
+}
+
+.tablink, .stickerLink {
+font-size: 12px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+#S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+width: 80px;
+height: 80px;
+margin: 10px 25px;
+font-size: 14px;
+}
+
+.nailShapeButton {
+padding: 10px;
+width: 100px;
+}
+
+.image {
+width: 50px;
+padding: 5px;
+}
+
+.tablink, .stickerLink {
+font-size: 15px;
+}
+}
+
+@media screen and (max-width: 1150px) {
+
+.image {
+width: 45px;
+padding: 5px;
+}
+
+#S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+width: 70px;
+height: 70px;
+margin: 5px 8px;
+font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.image {
+width: 40px;
+padding: 5px;
+}
+}
+
+@media screen and (max-width: 900px) {
+
+.image {
+width: 34px;
+padding: 4px;
+}
+
+.tablink, .stickerLink {
+font-size: 13px;
+}
+
+.nailShapeButton {
+padding: 7px;
+padding-bottom: 13px;
+width: 80px;
+}
+}
+
+@media screen and (max-width: 850px) {
+
+.image {
+width: 31px;
+padding: 4px;
+}
+}
+
+/*------------------------------------Scrolling Logos-------------------------------------------------------*/
+
+/* Keyframes for continuous scrolling */
+@keyframes slide {
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+
+.logos {
+overflow: hidden;
+padding: 60px 0;
+background: white;
+white-space: nowrap;
+width: 100%;
+}
+
+.logos-slide {
+display: inline-flex;
+animation: 16s slide infinite linear; /* Increased duration for smoother transition */
+}
+
+.logos-slide img {
+height: 110px;
+margin: 0 30px;
+object-fit: contain;
+}
+
+/*------------------------------------Experiences-------------------------------------------------------*/
+
+/* body {
+font-family: Arial, sans-serif;
+background-color: #5B6770;
+margin: 0;
+padding: 0;
+} */
+
+body {
+font-family: Arial, sans-serif;
+background-image: url('All-Images/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.png'); /* Path to your image */
+background-size: cover; /* Ensures the image covers the entire screen */
+background-position: center center; /* Centers the image */
+background-attachment: fixed; /* Keeps the image fixed while scrolling */
+margin: 0;
+padding: 0;
+}
+
+
+.container {
+max-width: 800px;
+margin: 50px auto;
+padding: 20px;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+text-align: center;
+font-size: 2em;
+color: #333;
+}
+
+.experience {
+margin: 20px 0;
+padding: 15px;
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+background-color: #fdfdfd;
+display: flex;
+gap: 15px;
+}
+
+.icon {
+flex-shrink: 0;
+}
+
+.icon img {
+width: 40px;
+height: 40px;
+}
+
+.details {
+flex-grow: 1;
+}
+
+.details h2 {
+margin: 0;
+font-size: 1.5em;
+color: #333;
+}
+
+.details p {
+margin: 5px 0;
+font-size: 1em;
+color: #666;
+line-height: 1.6;
+}
+
+/*END OF CSS*/
