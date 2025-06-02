@@ -885,10 +885,11 @@ svg #Background {
     margin: 0 50px;
     object-fit: contain;
     transition: transform 0.3s ease;
+    cursor: default;
 }
 
 .logos-slide img:hover {
-    transform: scale(1.1);
+    transform: scale(1.25);
 }
 
 /*------------------------------------Experiences-------------------------------------------------------*/
