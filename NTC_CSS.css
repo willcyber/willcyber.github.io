@@ -834,33 +834,61 @@ svg #Background {
 
 /*------------------------------------Scrolling Logos-------------------------------------------------------*/
 
-/* Keyframes for continuous scrolling */
 @keyframes slide {
-    0% {
+    from {
         transform: translateX(0);
     }
-    100% {
+    to {
         transform: translateX(-100%);
     }
 }
 
 .logos {
     overflow: hidden;
-    padding: 60px 0;
+    padding: 30px 0;
     background: white;
     white-space: nowrap;
+    position: relative;
     width: 100%;
+    display: flex;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
 }
 
 .logos-slide {
-    display: inline-flex;
-    animation: 16s slide infinite linear; /* Increased duration for smoother transition */
+    display: flex;
+    align-items: center;
+    animation: 20s slide infinite linear;
+    flex-shrink: 0;
 }
 
 .logos-slide img {
-    height: 110px;
-    margin: 0 30px;
+    height: 100px;
+    margin: 0 50px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logos-slide img:hover {
+    transform: scale(1.1);
 }
 
 /*------------------------------------Experiences-------------------------------------------------------*/
