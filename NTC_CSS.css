@@ -6,12 +6,27 @@
     }
     :root {
         --web-view-ids: Design_It_Instructions;
+        --accent-blue: #00c8ff;
+        --dark-bg: #1a1f25;
+        --text-color: rgba(255, 255, 255, 0.7);
+        --glitch-color1: #0ff;
+        --glitch-color2: #f0f;
+        --matrix-green: #0f0;
+        --terminal-green: #00c8ff;
     }
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         border: none;
+    }
+
+    body.dark-theme {
+        background-color: var(--dark-bg);
+        color: var(--text-color);
+        font-family: 'Courier New', Courier, monospace;
+        min-height: 100vh;
+        line-height: 1.6;
     }
 
     body {
@@ -964,3 +979,165 @@ h1 {
 }
 
 /*END OF CSS*/
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.terminal-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.prompt {
+    color: var(--terminal-green);
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-right: 15px;
+}
+
+.hero-title-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero-title {
+    color: var(--terminal-green);
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    animation: 
+        typing 3s steps(30, end) forwards,
+        blink 1s steps(1) infinite;
+    border-right: 3px solid var(--terminal-green);
+    animation-delay: 0.5s, 3.5s;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin: 1rem 0 1.5rem;
+    color: #fff;
+    opacity: 0;
+    animation: fade-in 0.5s forwards;
+    animation-delay: 3.5s;
+    text-align: center;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fade-in 0.5s forwards;
+    animation-delay: 4s;
+}
+
+.hero-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.hero-nav a::before {
+    content: '>';
+    color: var(--terminal-green);
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-nav a:hover {
+    color: var(--terminal-green);
+}
+
+.hero-nav a:hover::before {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title, .prompt {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .hero-nav {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title, .prompt {
+        font-size: 2.2rem;
+    }
+
+    .hero-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 400px }
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: inset(0 0 0 0);
+    }
+    2% {
+        clip-path: inset(20% 0 0 0);
+        transform: translate(-2px);
+    }
+    4% {
+        clip-path: inset(0 0 0 0);
+        transform: translate(0);
+    }
+    6% {
+        clip-path: inset(0 0 20% 0);
+        transform: translate(2px);
+    }
+    8% {
+        clip-path: inset(0 0 0 0);
+        transform: translate(0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: var(--terminal-green); }
+    50% { border-color: transparent; }
+}
