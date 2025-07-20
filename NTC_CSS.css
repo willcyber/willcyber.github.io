@@ -1049,7 +1049,7 @@ h1 {
 
 .hero-nav {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
     opacity: 0;
@@ -1062,22 +1062,29 @@ h1 {
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.hero-nav a::before {
-    content: '>';
-    color: var(--terminal-green);
-    margin-right: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.hero-nav a svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill 0.3s ease;
 }
 
 .hero-nav a:hover {
     color: var(--terminal-green);
 }
 
-.hero-nav a:hover::before {
-    opacity: 1;
+.hero-nav a:hover svg {
+    fill: var(--terminal-green);
+}
+
+/* Remove the old ">" hover effect */
+.hero-nav a::before {
+    display: none;
 }
 
 /* Responsive adjustments */
